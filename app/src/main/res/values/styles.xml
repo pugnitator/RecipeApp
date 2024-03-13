@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonView" parent="android:Widget.Button">
+        <item name="backgroundTint">@color/buttonBackgroundTint</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_semi_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="ButtonViewFavourites" parent="ButtonView">
+        <item name="backgroundTint">@color/buttonBackgroundTintFavourites</item>
+    </style>
+
+</resources>
