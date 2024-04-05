@@ -8,7 +8,7 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="StyleNavButton" parent="Widget.Material3.Button">
+    <style name="StyleNavButton">
         <item name="android:paddingVertical">@dimen/padding_vertical_nav_btn</item>
         <item name="android:paddingHorizontal">@dimen/padding_horizontal_nav_btn</item>
         <item name="cornerRadius">@dimen/corner_radius_nav_btn</item>
