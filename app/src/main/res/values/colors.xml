@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="buttonBackgroundTint">#525DC0</color>
-    <color name="buttonBackgroundTintFavourites">#E13E3E</color>
+    <color name="mainBackgroundColor">#F4FAFF</color>
+    <color name="btnCategoriesColor">#525DC0</color>
+    <color name="btnFavouritesColor">#E13E3E</color>
 </resources>

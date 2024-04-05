@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="ButtonView" parent="android:Widget.Button">
-        <item name="backgroundTint">@color/buttonBackgroundTint</item>
+    
+    <style name="StyleTitle14" parent="TextAppearance.AppCompat">
+        <item name="textAllCaps">true</item>
+        <item name="fontFamily">@font/montserrat_alternates_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_nav_btn</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:fontFamily">@font/montserrat_alternates_semi_bold</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="cornerRadius">8dp</item>
     </style>
 
-    <style name="ButtonViewFavourites" parent="ButtonView">
-        <item name="backgroundTint">@color/buttonBackgroundTintFavourites</item>
+    <style name="StyleNavButton" parent="Widget.Material3.Button">
+        <item name="android:paddingVertical">@dimen/padding_vertical_nav_btn</item>
+        <item name="android:paddingHorizontal">@dimen/padding_horizontal_nav_btn</item>
+        <item name="cornerRadius">@dimen/corner_radius_nav_btn</item>
+        <item name="android:textAppearance">@style/StyleTitle14</item>
     </style>
+
 
 </resources>
