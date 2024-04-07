@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding
         get() = _binding ?: throw IllegalAccessException("binding from ActivityMainBinding must not be null")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)

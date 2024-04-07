@@ -17,31 +17,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCategories"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
+            android:layout_weight="1"
             style="@style/StyleNavButton"
             android:backgroundTint="@color/btnCategoriesColor"
             android:text="@string/btn_categories" />
 
         <Space
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="5.7" />
+            android:layout_width="@dimen/button_spacing"
+            android:layout_height="match_parent" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnFavourites"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
+            android:layout_weight="1"
             style="@style/StyleNavButton"
             android:backgroundTint="@color/btnFavouritesColor"
             android:text="@string/btn_favourites"
             app:icon="@drawable/ic_heart_favourites"
             app:iconGravity="textEnd" />
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
