@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Fonts sizes -->
     <dimen name="text_size_nav_btn">14sp</dimen>
+
+    <!-- Views dimens -->
     <dimen name="high_nav_btn">36dp</dimen>
     <dimen name="margin_horizontal_nav_btn">16dp</dimen>
     <dimen name="margin_bottom_nav_btn">8dp</dimen>
-    <dimen name="corner_radius_nav_btn">@dimen/margin_bottom_nav_btn</dimen>
     <dimen name="padding_vertical_nav_btn">10dp</dimen>
     <dimen name="padding_horizontal_nav_btn">20dp</dimen>
+    <dimen name="button_spacing">4dp</dimen>
 
-    
 </resources>
