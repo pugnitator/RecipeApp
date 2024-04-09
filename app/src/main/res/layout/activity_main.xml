@@ -7,7 +7,22 @@
     android:background="@color/mainBackgroundColor"
     tools:context=".MainActivity">
 
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/padding_horizontal_nav_btn"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="60dp"
+
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
     <LinearLayout
+        android:id="@+id/layoutNavButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_horizontal_nav_btn"
@@ -19,10 +34,10 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCategories"
+            style="@style/StyleNavButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            style="@style/StyleNavButton"
             android:backgroundTint="@color/btnCategoriesColor"
             android:text="@string/btn_categories" />
 
@@ -32,10 +47,10 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnFavourites"
+            style="@style/StyleNavButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            style="@style/StyleNavButton"
             android:backgroundTint="@color/btnFavouritesColor"
             android:text="@string/btn_favourites"
             app:icon="@drawable/ic_heart_favourites"
