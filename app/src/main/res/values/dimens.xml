@@ -11,5 +11,7 @@
     <dimen name="padding_vertical_nav_btn">10dp</dimen>
     <dimen name="padding_horizontal_nav_btn">20dp</dimen>
     <dimen name="button_spacing">4dp</dimen>
+    <dimen name="margin_top_fragment">240dp</dimen>
+    <dimen name="layout_height_full_screen">0dp</dimen>
 
 </resources>

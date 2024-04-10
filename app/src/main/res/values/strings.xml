@@ -2,4 +2,5 @@
     <string name="app_name" translatable="false">RecipeApp</string>
     <string name="btn_categories">categories</string>
     <string name="btn_favourites">favourites</string>
+    <string name="fragment_list_categories" translatable="false">fragment_list_categories</string>
 </resources>
