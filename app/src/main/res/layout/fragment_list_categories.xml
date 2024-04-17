@@ -4,27 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragmentListCategories"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/mainBackgroundColor"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/headerCategories"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/high_header">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/ivHeaderCategories"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/iv_header_categories_description"
-            android:foregroundGravity="center"
             android:src="@drawable/bcg_categories"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             style="@style/StyleTitle20"
@@ -42,21 +40,12 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCategories"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:itemCount="6"
-        tools:listitem="@layout/item_category"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:spanCount="@integer/material_motion_duration_long_2"/>
-
-
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="fragment_list_categories"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginHorizontal="@dimen/margin_bottom_nav_btn"
+        android:layout_marginTop="@dimen/margin_bottom_nav_btn"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:itemCount="6"
+        tools:listitem="@layout/item_category" />
 
 </LinearLayout>
