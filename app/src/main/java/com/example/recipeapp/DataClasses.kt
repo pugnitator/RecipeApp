@@ -9,12 +9,14 @@ data class Category(
 
 data class Ingredient(
     val description: String,
-    val quantity: Float,
+    val quantity: Float?,
     val unitOfMeasure: String,
 )
 
 data class Recipe(
     val id: Int,
     val title: String,
-    val ingredients: Set<Ingredient>
+    val ingredients: MutableList<Ingredient>,
+    val method: String,
+    val imageUrl: String,
 )
