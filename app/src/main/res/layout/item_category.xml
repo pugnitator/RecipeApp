@@ -2,8 +2,8 @@
 
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_marginHorizontal="@dimen/margin_bottom_nav_btn"
     android:layout_marginBottom="@dimen/margin_bottom_nav_btn"
     android:clickable="true"
@@ -12,20 +12,19 @@
     app:cardElevation="@dimen/layout_height_full_screen">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/margin_bottom_nav_btn">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="@string/iv_header_categories_description"
             android:src="@drawable/burger" />
 
         <TextView
             style="@style/StyleTitle20"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_bottom_nav_btn"
             android:text="category" />
@@ -33,7 +32,7 @@
         <TextView
             style="@style/StyleDescription12"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:paddingHorizontal="@dimen/margin_bottom_nav_btn"
             android:paddingBottom="@dimen/padding_vertical_nav_btn"
             android:text="jdkl fkgt dkdlflr sks fjg wlelgjg lsfg,sgj" />
