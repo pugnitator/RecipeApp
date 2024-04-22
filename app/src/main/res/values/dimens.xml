@@ -15,6 +15,7 @@
     <dimen name="margin_horizontal_nav_btn">16dp</dimen>
     <dimen name="padding_horizontal_nav_btn">20dp</dimen>
     <dimen name="high_nav_btn">36dp</dimen>
+    <dimen name="high_image_item">130dp</dimen>
     <dimen name="high_header">224dp</dimen>
     <dimen name="margin_top_fragment">240dp</dimen>
 

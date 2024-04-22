@@ -13,13 +13,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_vertical_nav_btn"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/high_image_item"
             android:contentDescription="@string/iv_header_categories_description"
-            android:scaleType="center"
+            android:scaleType="centerCrop"
             android:src="@drawable/burger" />
 
         <TextView
@@ -34,11 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="@dimen/margin_bottom_nav_btn"
-            android:paddingBottom="@dimen/padding_vertical_nav_btn"
             android:text="jdkl fkgt dkdlflr sks fjg wlelgjg lsfg,sgj" />
-
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>
 
 
