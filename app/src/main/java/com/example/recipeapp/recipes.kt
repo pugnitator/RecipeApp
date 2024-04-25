@@ -1,7 +1,7 @@
 package com.example.recipeapp
 
 object STUB {
-    private val categories = setOf<Category>(
+    private val categories = listOf<Category>(
         Category(
             0,
             "Бургеры",
