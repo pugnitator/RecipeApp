@@ -5,4 +5,6 @@
     <color name="mainBackgroundColor">#F4FAFF</color>
     <color name="btnCategoriesColor">#525DC0</color>
     <color name="btnFavouritesColor">#E13E3E</color>
+    <color name="tvHeaderCategories">#5F3678</color>
+    <color name="tvItemCategoriesDescription">#666666</color>
 </resources>

@@ -2,16 +2,21 @@
 <resources>
 
     <!-- Fonts sizes -->
+    <dimen name="text_size_item_description_tv">12sp</dimen>
     <dimen name="text_size_nav_btn">14sp</dimen>
+    <dimen name="text_size_categories_header">20sp</dimen>
 
     <!-- Views dimens -->
-    <dimen name="high_nav_btn">36dp</dimen>
-    <dimen name="margin_horizontal_nav_btn">16dp</dimen>
+    <dimen name="layout_height_full_screen">0dp</dimen>
+    <dimen name="button_spacing">4dp</dimen>
     <dimen name="margin_bottom_nav_btn">8dp</dimen>
     <dimen name="padding_vertical_nav_btn">10dp</dimen>
+    <dimen name="margin_bottom_categories_12">12dp</dimen>
+    <dimen name="margin_horizontal_nav_btn">16dp</dimen>
     <dimen name="padding_horizontal_nav_btn">20dp</dimen>
-    <dimen name="button_spacing">4dp</dimen>
+    <dimen name="high_nav_btn">36dp</dimen>
+    <dimen name="high_image_item">130dp</dimen>
+    <dimen name="high_header">224dp</dimen>
     <dimen name="margin_top_fragment">240dp</dimen>
-    <dimen name="layout_height_full_screen">0dp</dimen>
 
 </resources>
