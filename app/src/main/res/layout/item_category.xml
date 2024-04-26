@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -9,7 +9,8 @@
     android:clickable="true"
     app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="@dimen/margin_bottom_nav_btn"
-    app:cardElevation="@dimen/layout_height_full_screen">
+    app:cardElevation="@dimen/layout_height_full_screen"
+    app:strokeWidth="@dimen/layout_height_full_screen">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,6 +19,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/ivCategoryItem"
             android:layout_width="match_parent"
             android:layout_height="@dimen/high_image_item"
             android:contentDescription="@string/iv_header_categories_description"
@@ -25,6 +27,7 @@
             android:src="@drawable/burger" />
 
         <TextView
+            android:id="@+id/tvCategoryItemTitle"
             style="@style/StyleTitle20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,6 +36,7 @@
             tool:text="category" />
 
         <TextView
+            android:id="@+id/tvCategoryItemDescription"
             style="@style/StyleDescription12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,6 +44,6 @@
             android:text="jdkl fkgt dkdlflr sks fjg wlelgjg lsfg,sgj"
             tool:text="jdkl fkgt dkdlflr sks fjg wlelgjg lsfg,sgj"/>
     </LinearLayout>
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>
 
 
