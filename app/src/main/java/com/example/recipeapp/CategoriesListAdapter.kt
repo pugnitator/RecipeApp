@@ -19,7 +19,6 @@ class CategoriesListAdapter(
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val binding = ItemCategoryBinding.bind(itemView)
-
         val ivCategory: ImageView = binding.ivCategoryItem
         val tvTitle: TextView = binding.tvCategoryItemTitle
         val tvDescription: TextView = binding.tvCategoryItemDescription
@@ -39,13 +38,14 @@ class CategoriesListAdapter(
                 holder.ivCategory.context?.assets?.open(category.imageUrl)
             createFromStream(inputStream, category.imageUrl)
         } catch (e: FileNotFoundException) {
-            val tag = "CategoryListAdapter"
+            val tag = "${e.printStackTrace()}"
             val errorLog = Log.e(tag, "Failed to retrieve file from assets")
             R.drawable.stub.toDrawable()
         }
 
         with(holder) {
             ivCategory.setImageDrawable(image)
+            ivCategory.contentDescription = "Изображение категории ${category.title}"
             tvTitle.text = category.title
             tvDescription.text = category.description
         }

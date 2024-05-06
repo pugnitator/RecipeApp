@@ -2,14 +2,18 @@
 
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/layout_item_category"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/margin_bottom_nav_btn"
+    android:layout_marginHorizontal="@dimen/margin_bottom_nav_btn"
+    android:layout_marginVertical="8dp"
     android:clickable="true"
     app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="@dimen/margin_bottom_nav_btn"
-    app:cardElevation="@dimen/layout_height_full_screen"
-    app:strokeWidth="@dimen/layout_height_full_screen">
+    app:cardElevation="@dimen/card_view_elevation_2dp"
+    app:strokeWidth="@dimen/layout_height_full_screen"
+    tool:contentDescription="Описание категории">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +27,8 @@
             android:layout_height="@dimen/high_image_item"
             android:contentDescription="@string/iv_header_categories_description"
             android:scaleType="centerCrop"
-            android:src="@drawable/burger" />
+            android:src="@drawable/burger"
+            tool:src="@drawable/burger" />
 
         <TextView
             android:id="@+id/tvCategoryItemTitle"
@@ -31,7 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/margin_bottom_nav_btn"
-            android:text="category" />
+            android:text="Категория"
+            tool:text="Категория" />
 
         <TextView
             android:id="@+id/tvCategoryItemDescription"
@@ -39,7 +45,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="@dimen/margin_bottom_nav_btn"
-            android:text="jdkl fkgt dkdlflr sks fjg wlelgjg lsfg,sgj" />
+            android:text="Описание карточки категории"
+            tool:text="Описание карточки категории" />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
 

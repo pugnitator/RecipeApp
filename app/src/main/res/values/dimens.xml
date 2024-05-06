@@ -8,6 +8,7 @@
 
     <!-- Views dimens -->
     <dimen name="layout_height_full_screen">0dp</dimen>
+    <dimen name="card_view_elevation_2dp">2dp</dimen>
     <dimen name="button_spacing">4dp</dimen>
     <dimen name="margin_bottom_nav_btn">8dp</dimen>
     <dimen name="padding_vertical_nav_btn">10dp</dimen>
