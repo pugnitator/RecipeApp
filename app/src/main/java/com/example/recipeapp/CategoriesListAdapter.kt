@@ -15,7 +15,7 @@ import java.io.InputStream
 
 class CategoriesListAdapter(
     private val dataSet: List<Category>,
-    var itemClickListener: OnItemClickListener? = null
+    private var itemClickListener: OnItemClickListener? = null
 ) : RecyclerView.Adapter<CategoriesListAdapter.ViewHolder>() {
 
     interface OnItemClickListener {
@@ -48,7 +48,6 @@ class CategoriesListAdapter(
                 holder.ivCategory.context?.assets?.open(category.imageUrl)
             createFromStream(inputStream, category.imageUrl)
         } catch (e: FileNotFoundException) {
-//            e.printStackTrace()
             val tag = "CategoryListAdapter"
             val errorLog = Log.e(tag, "Failed to retrieve file from assets", e)
             R.drawable.stub.toDrawable()

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.commit
 import com.example.recipeapp.databinding.FragmentListCategoriesBinding
 
 class CategoriesListFragment : Fragment() {
@@ -28,9 +29,14 @@ class CategoriesListFragment : Fragment() {
         val adapter = CategoriesListAdapter(dataSet)
         adapter.setOnItemClickListener(object : CategoriesListAdapter.OnItemClickListener {
             override fun onItemClick() {
-
+                parentFragmentManager.commit {
+                    openRecipesByCategoryId()
+                }
             }
         })
         return adapter
+    }
+
+    private fun openRecipesByCategoryId() {
     }
 }
