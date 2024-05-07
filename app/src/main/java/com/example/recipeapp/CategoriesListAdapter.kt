@@ -39,7 +39,7 @@ class CategoriesListAdapter(
             createFromStream(inputStream, category.imageUrl)
         } catch (e: FileNotFoundException) {
             val tag = "${e.printStackTrace()}"
-            val errorLog = Log.e(tag, "Failed to retrieve file from assets")
+            val errorLog = Log.e(tag, "Failed to retrieve file from assets", e)
             R.drawable.stub.toDrawable()
         }
 
