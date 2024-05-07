@@ -24,7 +24,13 @@ class CategoriesListFragment : Fragment() {
         return binding?.root
     }
 
-    private fun initRecycler(dataSet: List<Category>): CategoriesListAdapter =
-        CategoriesListAdapter(dataSet)
+    private fun initRecycler(dataSet: List<Category>): CategoriesListAdapter {
+        val adapter = CategoriesListAdapter(dataSet)
+        adapter.setOnItemClickListener(object : CategoriesListAdapter.OnItemClickListener {
+            override fun onItemClick() {
 
+            }
+        })
+        return adapter
+    }
 }

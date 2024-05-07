@@ -14,8 +14,18 @@ import java.io.FileNotFoundException
 import java.io.InputStream
 
 class CategoriesListAdapter(
-    private val dataSet: List<Category>
+    private val dataSet: List<Category>,
+    var itemClickListener: OnItemClickListener? = null
 ) : RecyclerView.Adapter<CategoriesListAdapter.ViewHolder>() {
+
+    interface OnItemClickListener {
+        fun onItemClick()
+    }
+
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        itemClickListener = listener
+        itemClickListener?.onItemClick()
+    }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val binding = ItemCategoryBinding.bind(itemView)
@@ -38,8 +48,9 @@ class CategoriesListAdapter(
                 holder.ivCategory.context?.assets?.open(category.imageUrl)
             createFromStream(inputStream, category.imageUrl)
         } catch (e: FileNotFoundException) {
-            val tag = "${e.printStackTrace()}"
-            val errorLog = Log.e(tag, "Failed to retrieve file from assets")
+//            e.printStackTrace()
+            val tag = "CategoryListAdapter"
+            val errorLog = Log.e(tag, "Failed to retrieve file from assets", e)
             R.drawable.stub.toDrawable()
         }
 
@@ -48,6 +59,7 @@ class CategoriesListAdapter(
             ivCategory.contentDescription = "Изображение категории ${category.title}"
             tvTitle.text = category.title
             tvDescription.text = category.description
+            itemView.setOnClickListener { itemClickListener?.onItemClick() }
         }
     }
 
